@@ -1,0 +1,1 @@
+cmake -m64 -fPIC -std=gnu++17 Linker flags: -shared Link libluaplugin.a .
