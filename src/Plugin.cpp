@@ -15,7 +15,7 @@
 
 Plugin::Plugin() {
 
-    LUA_DEFINE(tridentlib_http_get){
+    LUA_DEFINE(httpGet){
         if(lua_gettop(L) != 2){
             return 0;
         }
@@ -55,7 +55,7 @@ Plugin::Plugin() {
         return 1;
     });
 
-    LUA_DEFINE(tridentlib_http_post){
+    LUA_DEFINE(httpPost){
         if(lua_gettop(L) != 3){
             return 0;
         }
