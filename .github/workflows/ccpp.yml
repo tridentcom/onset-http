@@ -14,7 +14,7 @@ jobs:
     - name: chmod-all
       run: sudo chmod -R 777 ./
     - name: add-packages
-      run: sudo apt install libsodium-dev
+      run: sudo apt install libcurl4-openssl-dev
     - name: configure
       run: ./setup-production
     - name: make
