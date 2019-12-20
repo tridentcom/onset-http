@@ -9,7 +9,7 @@
 ## Functions
 
 ```lua
--- Starts HTTP Get requests with provided parameters.
+-- Starts HTTP Get request with provided parameters.
 local url = "https://example.com"
 httpGet(url, function(body, code, lenght)
 	print(body) -- Response body.
@@ -19,7 +19,7 @@ end)
 ```
 
 ```lua
--- Starts HTTP Post requests with provided parameters.
+-- Starts HTTP Post request with provided parameters.
 local url = "https://example.com"
 local parameters = "data=test" -- Url Paramter Format (Tables Soon)
 httpPost(url, parameters, function(body, code, lenght)
