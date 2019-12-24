@@ -29,6 +29,11 @@ httpPost(url, parameters, function(body, code, lenght)
 end)
 ```
 
+## Disclaimer
+This plugin is currently blocking. This means that an HTTP request will halt your servers Lua execution until the request has been sent and data has been received. Several mitigation factors exist. Such as using separate detached threads or thread pooling. I'm relatively new to c++ and even more so c++ in Lua so feel free to make a pull request with a solution. The furthest I have come is mitigating the blocking issue but the Lua state gets wiped for some unknown reason making me unable to callback to the included function. For more details or advice feel free to message me on discord @NERO2k#0001
+
+If I have some eureka moment I will update this package but currently, I have not got time to actively pursue a fix for this issue nor do I have the need for this package anymore due to some reworks and the change to handle all requests internally for my own project.
+
 ## Credits
 Created by NERO2k.
 
